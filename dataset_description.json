@@ -1,7 +1,8 @@
 {
     "ReferencesAndLinks": [
         "Miltiadous, A., Tzimourta, K. D., Afrantou, T., Ioannidis, P., Grigoriadis, N., Tsalikakis, D. G., Angelidis, P., Tsipouras, M. G., Glavas, E., Giannakeas, N., & Tzallas, A. T. (2023). A Dataset of Scalp EEG Recordings of Alzheimer’s Disease, Frontotemporal Dementia and Healthy Subjects from Routine EEG. Data, 8(6), 95. doi: 10.3390/data8060095",
-        "Miltiadous, A., Gionanidis, E., Tzimourta, K. D., Giannakeas, N., & Tzallas, A. T. (2023). DICE-net: A Novel Convolution-Transformer Architecture for Alzheimer Detection in EEG Signals. IEEE Access, 1–1. doi: 10.1109/ACCESS.2023.3294618"
+        "Miltiadous, A., Gionanidis, E., Tzimourta, K. D., Giannakeas, N., & Tzallas, A. T. (2023). DICE-net: A Novel Convolution-Transformer Architecture for Alzheimer Detection in EEG Signals. IEEE Access, 1–1. doi: 10.1109/ACCESS.2023.3294618",
+        "Miltiadous, A., Ntetska, A., Aspiotis, V., Moustakli, E., Tsipouras, M. G., Tzallas, A. T., Giannakeas, N., Glavas, E., Angelidis, P., & Tzimourta, K. D. (2026). The AHEPA EEG benchmark: setting the standard for machine learning in dementia diagnosis, a scoping review. Cognitive Neurodynamics, 20(1). https://doi.org/10.1007/s11571-026-10464-w"
     ],
     "Name": "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
     "Authors": [
