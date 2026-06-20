@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004504-blue)](https://doi.org/10.82901/nemar.on004504)
+
 This dataset contains the EEG resting state-closed eyes recordings from 88 subjects in total.
 
 Participants: 36 of them were diagnosed with Alzheimer's disease (AD group), 23 were diagnosed with Frontotemporal Dementia (FTD group) and 29 were healthy subjects (CN group).
