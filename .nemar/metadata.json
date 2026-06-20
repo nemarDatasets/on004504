@@ -1,38 +1,118 @@
 {
   "version": "2.0",
-  "dataset_id": "on004504",
-  "source": "openneuro",
-  "source_id": "ds004504",
+  "pipeline_stage": "validated",
   "title": "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
-  "authors": {
-    "Andreas Miltiadous": {},
-    "Katerina D. Tzimourta": {},
-    "Theodora Afrantou": {},
-    "Panagiotis Ioannidis": {},
-    "Nikolaos Grigoriadis": {},
-    "Dimitrios G. Tsalikakis": {},
-    "Pantelis Angelidis": {},
-    "Markos G. Tsipouras": {},
-    "Evripidis Glavas": {},
-    "Nikolaos Giannakeas": {},
-    "Alexandros T. Tzallas": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Andreas Miltiadous": {
+      "orcid": "0000-0003-0675-9088"
+    },
+    "Katerina D. Tzimourta": {
+      "orcid": "0000-0001-9640-7005"
+    },
+    "Theodora Afrantou": {
+      "orcid": "0000-0003-2009-4166"
+    },
+    "Panagiotis Ioannidis": {
+      "orcid": "0000-0003-0254-6624"
+    },
+    "Nikolaos Grigoriadis": {
+      "orcid": "0000-0002-4278-3301"
+    },
+    "Dimitrios G. Tsalikakis": {},
+    "Pantelis Angelidis": {
+      "orcid": "0000-0003-1503-8952"
+    },
+    "Markos G. Tsipouras": {
+      "orcid": "0000-0002-6757-1698"
+    },
+    "Evripidis Glavas": {},
+    "Nikolaos Giannakeas": {
+      "orcid": "0000-0002-0615-783X"
+    },
+    "Alexandros T. Tzallas": {
+      "orcid": "0000-0001-9043-1290"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004504.v1.0.9",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1007/s11571-026-10464-w",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004504",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004504",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3390/data8060095",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1109/ACCESS.2023.3294618",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v1.2.1",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
   ],
-  "acknowledgements": "We aknowledge support of the 2nd Department of Neurology of AHEPA General University Hospital of Thessaloniki.\n\nWe acknowledge support of this work from the project “Immersive Virtual, Augmented and Mixed Reality Center of Epirus” (MIS 5047221) which is implemented under the Action “Reinforcement of the Research and Innovation Infrastructure”, funded by the Operational Programme “Competitiveness, Entrepreneurship and Innovation” (NSRF 2014-2020) and co-financed by Greece and the European Union (European Regional Development Fund)."
+  "formats": [
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises resting-state, eyes-closed scalp EEG recordings from 88 subjects: 36 with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls. Recordings were acquired using a Nihon Kohden EEG 2100 device with 19 electrodes at 500 Hz sampling rate, totaling approximately 1164 minutes of data. The dataset includes both raw and preprocessed versions with artifact correction, supporting machine learning and clinical research in dementia diagnosis and neurophysiological characterization.",
+  "methods_description": "EEG recordings were acquired from 19 scalp electrodes (10-20 system) using a Nihon Kohden EEG 2100 clinical device at 500 Hz sampling rate with 10µV/mm resolution. Recordings lasted approximately 12-14 minutes per subject in resting state with eyes closed. Preprocessing included Butterworth band-pass filtering (0.5-45 Hz), re-referencing to mastoid electrodes (A1-A2), Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) with automatic artifact classification using ICLabel.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Alzheimer's disease"
+    },
+    {
+      "term": "Frontotemporal Dementia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D057180"
+    },
+    {
+      "term": "resting-state EEG"
+    },
+    {
+      "term": "artifact correction"
+    },
+    {
+      "term": "machine learning"
+    },
+    {
+      "term": "dementia diagnosis"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "European Regional Development Fund",
+      "award_number": "MIS 5047221",
+      "award_title": "Immersive Virtual, Augmented and Mixed Reality Center of Epirus"
+    }
+  ],
+  "source_hash": "78b6992877dfe0b7bee12b01d8421cb5bfd3bfdbc9a1bdce34393f72ae27bc90"
 }
