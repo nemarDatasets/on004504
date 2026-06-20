@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
+  "description": "This dataset comprises resting-state, eyes-closed scalp EEG recordings from 88 subjects: 36 with Alzheimer's disease, 23 with Frontotemporal Dementia, and 29 healthy controls. Recordings were acquired using a Nihon Kohden EEG 2100 device with 19 electrodes at 500 Hz sampling rate, totaling approximately 1164 minutes of data. The dataset includes both raw and preprocessed versions with artifact correction, supporting machine learning and clinical research in dementia diagnosis and neurophysiological characterization.",
+  "methods_description": "EEG recordings were acquired from the 2nd Department of Neurology of AHEPA General Hospital using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes positioned according to the 10-20 international system. Sampling rate was 500 Hz with 10µV/mm resolution. Recordings were performed in sitting position with eyes closed, lasting approximately 12-14 minutes per subject. Preprocessing included Butterworth band-pass filtering (0.5-45 Hz), re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) with automatic artifact classification using ICLabel.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -35,12 +37,32 @@
       "orcid": "0000-0001-9043-1290"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004504.v1.0.9",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Alzheimer's disease"
+    },
+    {
+      "term": "Frontotemporal Dementia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D057180"
+    },
+    {
+      "term": "resting-state EEG"
+    },
+    {
+      "term": "machine learning"
+    },
+    {
+      "term": "dementia diagnosis"
+    },
+    {
+      "term": "artifact correction"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1007/s11571-026-10464-w",
       "identifier_type": "DOI",
@@ -65,46 +87,11 @@
       "identifier": "10.1109/ACCESS.2023.3294618",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".json",
-    ".md",
-    ".set",
-    ".tsv"
-  ],
-  "description": "This dataset comprises resting-state, eyes-closed scalp EEG recordings from 88 subjects: 36 with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls. Recordings were acquired using a Nihon Kohden EEG 2100 device with 19 electrodes at 500 Hz sampling rate, totaling approximately 1164 minutes of data. The dataset includes both raw and preprocessed versions with artifact correction, supporting machine learning and clinical research in dementia diagnosis and neurophysiological characterization.",
-  "methods_description": "EEG recordings were acquired from 19 scalp electrodes (10-20 system) using a Nihon Kohden EEG 2100 clinical device at 500 Hz sampling rate with 10µV/mm resolution. Recordings lasted approximately 12-14 minutes per subject in resting state with eyes closed. Preprocessing included Butterworth band-pass filtering (0.5-45 Hz), re-referencing to mastoid electrodes (A1-A2), Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) with automatic artifact classification using ICLabel.",
-  "keywords": [
-    {
-      "term": "EEG"
     },
     {
-      "term": "Alzheimer's disease"
-    },
-    {
-      "term": "Frontotemporal Dementia",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D057180"
-    },
-    {
-      "term": "resting-state EEG"
-    },
-    {
-      "term": "artifact correction"
-    },
-    {
-      "term": "machine learning"
-    },
-    {
-      "term": "dementia diagnosis"
+      "identifier": "10.18112/openneuro.ds004504.v1.0.9",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -114,5 +101,19 @@
       "award_title": "Immersive Virtual, Augmented and Mixed Reality Center of Epirus"
     }
   ],
-  "source_hash": "78b6992877dfe0b7bee12b01d8421cb5bfd3bfdbc9a1bdce34393f72ae27bc90"
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "5.8 GB (177 files)"
+  ],
+  "formats": [
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "831f9dfc0cd74e59d57db9483588a0327f063b9e3407e98c1e43d57dfc47dcb6"
 }
